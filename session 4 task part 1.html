@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Session 2 part 3 task</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <style>
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+ .dashboard{
+    background-color: rgb(5, 5, 57);
+    position: fixed;
+    width: 240px;
+    height: 100%;
+    display: flex;
+
+ }
+ main{
+    padding: 30px;
+    margin-left: 240px;
+    background-color: rgb(212, 226, 237);
+    border-radius: 20px;
+ }
+  header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    align-items: center;
+
+
+
+  }
+ aside{
+    color: aliceblue;
+
+ }
+ body{ 
+    height: 3000px;
+ }
+ .dashboard-header{ 
+    padding: 30px ;
+    border-bottom: 1px solid white;
+ }
+ 
+ li{
+    padding: 20px;
+ }
+ .right{
+    display: flex;
+    gap: 20px;
+ }
+ a{
+    text-decoration: none;
+    color: aliceblue;
+ }
+ .person{
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+ }
+ input{
+     position: relative;
+     height: 40px;
+     width: 190px;
+     border-radius: 20px;
+     right: 20px;
+ }
+#search{
+    position: absolute;
+    z-index: 2;
+    top: 55px;
+    right: 620px;
+   
+}
+#bell{ 
+    background-color: aliceblue;
+    size: 30px;
+    right: 400px;  
+}
+#note{
+    width: 15px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    right: 410px;
+    top: 40px;
+    
+}
+
+
+.statistics-child{ 
+    display: flex;
+    padding-left: 280px;
+    padding-top: 70px;
+    height: 200px;
+}
+.chart{
+    display: flex;
+    width: 100%;
+    gap: 12%;
+    justify-content: space-between;
+    list-style: none;
+    font-family: 'Courier New', Courier, monospace;
+}
+ .chart-box{ 
+    border: 3px solid aliceblue;
+    border-radius:20px;
+    width: 400px;
+
+ }
+ .timeline{
+    margin-left: 280px;
+    width: 45%;
+    border: 3px solid black;
+    border-radius: 20px;
+ }
+ .progress{
+    margin-left: 1050px ;
+    margin-top: -300px ;
+    border: 1px solid black;
+    border-radius: 10px;
+
+ }
+ .picture{ 
+    display: flex;
+    align-items: center;
+
+
+ }
+ 
+ 
+   </style>
+
+
+</head>
+<body>
+<div class="father">
+
+<div class="dashboard">
+    <aside >
+        <div class="dashboard-header">
+        <span class="border" >
+          <i class="fa-brands fa-slack"></i>
+           <span>DashPro</span>
+        </span>
+        </div>
+        <nav>
+            <ul>
+                <li >
+                    <i class="fa-solid fa-chart-line"></i>
+                    <a href="">Dashboard</a>
+
+                </li>
+                <li>
+                    <i class="fa-solid fa-chart-pie"></i>
+                    <a href="">Analysis</a>
+
+                </li>
+                <li>
+                    <i class="fa-solid fa-user"></i>
+                    <a href="">User</a>
+
+                </li>
+                <li>
+                    <i class="fa-solid fa-gear"></i>
+                    <a href="">Settings</a>
+
+                </li>
+                <li>
+                   <i class="fa-solid fa-diagram-project"></i>
+                    <a href="">Project</a>
+
+                </li>
+
+            </ul>
+        </nav>
+
+       
+    </aside>
+</div>
+<div> 
+  <main>
+   <header>
+    <div class="left">
+        <h1>DashBoard</h1>
+        <p style="color: rgb(104, 108, 108);">Welcome back! Here is what is happening today</p>
+
+
+    </div>
+    <div class="left-center">
+        <i id="search" class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" placeholder="Search">
+    </div> 
+    <div class="right-center">
+        <button id="bell"><i class="fa-solid fa-bell"></i></button>
+        <span id="note" >5</span>
+
+    </div>
+        
+
+    <div class="picture" >
+        <img class="person" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdQLwDqDwd2JfzifvfBTFT8I7iKFFevcedYg&s" alt="">
+        <div class="profile" >
+         <span>John Smith</span>
+         <span style="color: rgb(103, 104, 104);">Administrator</span>
+        </div>
+    </div>
+   </header>
+  </main>
+</div>
+</div>
+
+    <div class="statistics-child">
+        <ul class="chart">
+            <li class="chart-box">
+                 <icon style="background-color: rgb(2, 255, 48);">
+                    <i id="id1" class="fa-solid fa-dollar-sign"></i>
+                 </icon>
+                <item style="flex-direction: column;">
+
+                <h1>$45,231</h1>
+                <p style="color: aqua;">Total Reevenue</p>
+                </item>
+                <i style="color: rgb(10, 184, 42);" class="fa-solid fa-sort-up">+12.5%</i>
+            </li>
+            <li class="chart-box">
+                 <span style="background-color: rgb(10, 33, 182);">
+                   <i id="id2" class="fa-solid fa-user"></i>
+                </span>
+                 <item style="flex-direction: column;">
+
+                <h1>2,431</h1>
+                <p style="color: aqua;">Active user</p>
+                </item>
+                <i style="color: rgb(10, 184, 42);" class="fa-solid fa-sort-up">8.2%</i>
+            </li>
+            <li class="chart-box">
+                 <span style="background-color: rgb(173, 122, 12);">
+                  <i id="id3" class="fa-solid fa-address-card"></i>
+                </span>
+                 <item style="flex-direction: column;">
+
+                <h1>1,247</h1>
+                <p style="color: aqua;">Total Orders</p>
+                </item>
+                <i class="fa-solid fa-sort-down">3.1%</i> 
+               
+            </li>
+            <li class="chart-box">
+                 <span style="background-color: rgb(143, 6, 151);">
+                    <i id="id4" class="fa-solid fa-dollar-sign"></i>
+                </span> 
+                 <item style="flex-direction: column;">
+
+                <h1>78.4%</h1>
+                <p style="color: aqua;">Conversion Rate</p>
+                </item>
+                <i style="color: rgb(10, 184, 42);" class="fa-solid fa-sort-up">5.7%</i>
+            </li>
+            
+                </span>
+            </li>
+        </ul>
+    </div>
+    <div class="timeline">
+        <text style="display: flex;margin: 30px; border-bottom: 2px solid gray;">
+            <h3 >Recent activity</h3>
+            <p style="padding-top:5px; margin-left: 300px ;color: rgb(46, 19, 166);" >View all</p>
+        </text>
+       <div class="picture" >
+        <img class="person" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdQLwDqDwd2JfzifvfBTFT8I7iKFFevcedYg&s" alt="">
+        <div class="profile" >
+         <span>John Smith</span>
+         <span style="color: rgb(103, 104, 104);">Administrator</span>
+        </div>
+    </div>
+    <div class="picture" >
+        <img class="person" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdQLwDqDwd2JfzifvfBTFT8I7iKFFevcedYg&s" alt="">
+        <div class="profile" >
+         <span>John Smith</span>
+         <span style="color: rgb(103, 104, 104);">Administrator</span>
+        </div>
+    </div>
+    <div class="picture" >
+        <img class="person" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdQLwDqDwd2JfzifvfBTFT8I7iKFFevcedYg&s" alt="">
+        <div class="profile" >
+         <span>John Smith</span>
+         <span style="color: rgb(103, 104, 104);">Administrator</span>
+        </div>
+    </div>
+    <div class="picture" >
+        <img class="person" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdQLwDqDwd2JfzifvfBTFT8I7iKFFevcedYg&s" alt="">
+        <div class="profile" >
+         <span>John Smith</span>
+         <span style="color: rgb(103, 104, 104);">Administrator</span>
+        </div>
+    </div>
+       
+    </div>
+    <div class="progress">
+       <span style="display: flex; align-items: center;padding-bottom: 12px ; border-bottom: 2px solid gray;"> 
+        <h3>Project Progress</h3>
+        <p style="margin-left:300px ; color: blue;"> Manage</p>
+       </span> 
+       <div >
+        <div style="flex-direction: column; padding-bottom: 20px; padding-top: 12px;"> 
+           <h3>Website Redesign</h3>
+           <p style="color: grey;">Due Dec15 2024</p>
+        </div>
+        <div style="flex-direction: column; padding-bottom: 20px;"> 
+           <h3>Website Redesign</h3>
+           <p style="color: grey;">Due Dec15 2024</p>
+        </div>
+          <div>
+           <div style="flex-direction: column; padding-bottom: 20px;"> 
+             <h3>Website Redesign</h3>
+             <p style="color: grey;">Due Dec15 2024</p>
+           </div>
+           <span>
+          </div>
+        </div>
+          
+            
+           
+    </div>
+
+
+    
+
+
+
+
+</div>
+
+</body>
+</html>
