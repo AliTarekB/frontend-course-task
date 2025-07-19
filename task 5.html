@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Session 5 part 1 task</title>
+    <style>
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+:root {
+  --primary-color: #4caf4f;
+  --lite-primary-color: #4caf4f57;
+  --tint-color: #e8f5e9;
+  --main-grey: #4d4d4d;
+  --sec-grey: #717171;
+  --text-grey: #18191f;
+  --main-black: #263238;
+  --silver-color: #f5f7fa;
+  --main-white: #ffffff;
+
+}
+body {
+  font-family: "Inter", sans-serif;
+
+}
+ul {
+  list-style: none;
+
+}
+.links ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+a {
+  text-decoration: none;
+
+}
+ .sec1{
+  height: calc(100vh - 80px);
+  background-color: var(--silver-color);
+}
+
+.head {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  gap: 100px;
+  align-items: center;
+}
+.head2 {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  flex-direction: column ;
+  gap: 100px;
+  align-items: center;
+
+}
+.log-button {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.log-button .login {
+  border: none;
+  background: none;
+  font-size: 14px;
+  color: var(--primary-color);
+  line-height: 20px;
+  font-weight: 500;
+}
+.head-content {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 0;
+}
+.head-title {
+  font-size: 64px;
+  line-height: 76px;
+  font-weight: 800;
+}
+.head-title span {
+  color: var(--primary-color);
+}
+header {
+  padding: 20px 0;
+  background-color: var(--silver-color);
+}
+.signup {
+  background-color: var(--primary-color);
+  color: var(--main-white);
+  border: none;
+  border-radius: 6px;
+  width: 91px;
+  height: 40px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.cust-button{
+  background-color: var(--primary-color);
+  color: var(--main-white);
+  border: none;
+  border-radius: 6px;
+  width: 128px;
+  height: 52px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.cust-button2{
+  background-color: var(--primary-color);
+  color: var(--main-white);
+  border: none;
+  border-radius: 4px;
+  width: 151px;
+  height: 52px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.sec2{
+  padding: 16px 0;
+  height: 190px;
+  font-size: 36px;
+}
+.sec3{
+  padding: 32px 0;
+  height: 416px;
+  font-size: 36px;
+}
+.sec3-ul{
+  display: flex;
+  justify-content: space-between;
+
+}
+.sec2-title{
+  color: #4d4d4d;
+
+
+}
+.sec2-ul{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.links ul li a {
+  color: var(--text-grey);
+  font-size: 16px;
+}
+.icons{
+  box-shadow: 7px 20px #E8F5E9;
+  border-radius: 18px 5px 10px 5px ;
+  margin-left: 100px;
+}
+.icons2{
+  width: 48px;
+  height: 48px;
+
+}
+.headline{
+  font-weight: 700;
+  color: #4d4d4d;
+  justify-content: space-between;
+  
+}
+
+.head-description {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--sec-grey);
+  margin-top: 16px;
+  margin-bottom: 32px;
+}
+.head-description2 {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--sec-grey);
+
+  margin-bottom: 32px;
+}
+.stats{
+  
+  display: grid;
+  grid-template-rows: 60px 60px;
+  grid-template-columns: 255px 255px;
+}
+.stats li p{
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--sec-grey);
+}
+.stats li h1{
+  color: #4d4d4d;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="head">
+            <div class="logo">
+                <img src="C:\Users\marwa\Downloads\Logo.svg" alt="logo">
+            </div>
+            <nav class="links" >
+              <ul>
+                <li><a href=""></a>Home</li>
+                <li><a href=""></a>Service</li>
+                <li><a href=""></a>Feature</li>
+                <li><a href=""></a>Product</li>
+                <li><a href=""></a>Testimonial</li>
+                <li><a href=""></a>FAQ</li>
+              </ul>
+            </nav>
+            <div class="log-button">
+              <button class="login">login</button>
+              <button class="signup">sign up</button>
+            </div>
+        </div>
+
+    </header>
+    <main>
+      <section class="sec1">
+        <div class="head">
+          <div class="head-content">
+            <div class="head-text">
+              <h1 class="head-title">Lesson and insights <span>from 8 years</span></h1>
+              <p class="head-description">Where to grow your buisness as a photo grapher: site or social media?</p>
+              <button class="cust-button">Register</button>
+
+
+              </div>
+              <div class="head-image">
+                <img src="file:///C:/Users/marwa/Downloads/Illustration.svg" alt="">
+              </div>
+
+
+
+
+            </div>
+
+
+          </div>
+
+        </div>
+      </section>
+      <section class="sec2">
+        <div class="head2">
+          <div align="center">
+          <h1 class="sec2-title" >Our Clients</h1>
+          <p class="head-description">We have been working with some fortune 500+ client</p>
+          </div>
+          <ul class="sec2-ul">
+            <li><img src="file:///C:/Users/marwa/Downloads/Logo%20(1).svg" alt="logo"></li>
+            <li><img src="C:/Users/marwa/Downloads/Logo%20(2).svg" alt="logo"></li>
+            <li><img src="file:///C:/Users/marwa/Downloads/Logo%20(3).svg" alt="logo"></li>
+            <li><img src="C:\Users\marwa\Downloads\Logo (1).png" alt="logo"></li>
+            <li><img src="C:\Users\marwa\Downloads\Logo (2).png" alt="logo"></li>
+            <li><img src="C:\Users\marwa\Downloads\Logo (3).png" alt="logo"></li>
+            <li><img src="file:///C:/Users/marwa/Downloads/Logo%20(3).svg" alt="logo"></li>
+          </ul>
+        </div>
+      </section>
+      <section class="sec3">
+        <div class="head2">
+          <div align="center">
+            <h1 class="sec2-title">Manage your entire community in a single system</h1>
+            <p class="head-description">Who is Nextcent suitable for?</p>
+          </div>
+          <div>
+          <ul class="sec3-ul">
+            <li class="icon-desc">
+             <img  class="icons" src="C:\Users\marwa\Downloads\Icon.svg" alt="">
+               <h1 class="headline">Membership Organisations</h1>
+               <p class="head-description">Our membership management software provides full automation of membership renewals and payments</p>
+            </li>
+            <li class="icon-desc">
+             <img class="icons" src="C:\Users\marwa\Downloads\Icon (1).svg" alt="">
+               <h1 class="headline">National Associations</h1>
+               <p class="head-description">Our membership management software provides full automation of membership renewals and payments</p>
+            </li>
+            <li class="icon-desc">
+             <img class="icons" src="C:\Users\marwa\Downloads\Icon (2).svg" alt="">
+               <h1 class="headline" >Clubs And Groups</h1>
+               <p class="head-description">Our membership management software provides full automation of membership renewals and payments</p>
+            </li>
+          
+
+          </ul>
+          </div>
+        </div>
+          
+
+      </section>
+      <section class="sec4">
+        <div class="head">
+          <img style="margin-top: 50px;" src="file:///C:/Users/marwa/Downloads/Frame%2035.svg" alt="frame">
+
+          <div>
+            <h1 style="color: #4d4d4d; font-weight: 600; font-size: 36px;">The unseen of spending three years at Pixelgrade</h1>
+            <p class="head-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo ipsum. Sed accumsan quam vitae est varius fringilla. Pellentesque placerat vestibulum lorem sed porta. Nullam mattis tristique iaculis. Nullam pulvinar sit amet risus pretium auctor. Etiam quis massa pulvinar, aliquam quam vitae, tempus sem. Donec elementum pulvinar odio.</p>
+            <button class="cust-button2">learn more</button>
+          </div>
+        </div>
+        
+
+
+
+
+      </section>
+      <section class="sec5"  style="background-color: #f5f7fa;">
+        <div class="head" >
+          <div class="head-text">
+              <h1 class="head-title" style="font-size: 36px;">Helping a local <span> business reinvent itself</span></h1>
+              <p class="head-description2">We reached here with our hard work and dedication</p>
+          </div>
+          <div >
+            <ul class="stats">
+              <li style="display: flex;">
+                
+                <img class="icons2" src="file:///C:/Users/marwa/Downloads/Icon%20(3).svg" alt="">
+                <div style="flex-direction: column;">
+                <h1>2,245,341</h1>
+                <p >Members</p>
+                </div>
+              </li>
+              <li style="display: flex;">
+                <img class="icons2" src="file:///C:/Users/marwa/Downloads/Icon%20(2).svg" alt="">
+                <div style="flex-direction: column;">
+                <h1>46,328</h1>
+                <p>Clubs</p>
+                </div>
+              </li>
+              <li style="display: flex;">
+                
+                <img class="icons2" src="file:///C:/Users/marwa/Downloads/Icon%20(5).svg" alt="">
+                <div style="flex-direction: column;">
+                <h1>828,867</h1>
+                <p >Event Bookings</p>
+                </div>
+              </li>
+              <li style="display: flex;">
+                <img class="icons2" src="file:///C:/Users/marwa/Downloads/Icon%20(4).svg" alt="">
+                <div style="flex-direction: column;">
+                <h1>1,926,436</h1>
+                <p >Payments</p>
+                </div>
+              </li>
+
+
+
+
+            </ul>
+
+
+          </div>
+
+
+        </div>
+      </section>
+      <section></section>
+      <section></section>
+      <section></section>
+
+
+
+
+    </main>
+
+
+</body>
+</html>
