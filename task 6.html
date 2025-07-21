@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Session 5 part 1 task</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+:root {
+  --primary-color: #4caf4f;
+  --lite-primary-color: #4caf4f57;
+  --tint-color: #e8f5e9;
+  --main-grey: #4d4d4d;
+  --sec-grey: #717171;
+  --text-grey: #18191f;
+  --main-black: #263238;
+  --silver-color: #f5f7fa;
+  --main-white: #ffffff;
+
+}
+body {
+  font-family: "Inter", sans-serif;
+
+}
+ul {
+  list-style: none;
+
+}
+.links ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+a {
+  text-decoration: none;
+
+}
+ .sec1{
+  height: calc(100vh - 80px);
+  background-color: var(--silver-color);
+}
+
+.head {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  gap: 100px;
+  align-items: center;
+}
+.head2 {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  flex-direction: column ;
+  gap: 100px;
+  align-items: center;
+
+}
+.log-button {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.log-button .login {
+  border: none;
+  background: none;
+  font-size: 14px;
+  color: var(--primary-color);
+  line-height: 20px;
+  font-weight: 500;
+}
+.head-content {
+   opacity: 0;
+  transform: translateY(20px);
+  animation: appear 1s 0.5s ease-in forwards;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 0;
+}
+.head-title {
+ 
+  font-size: 64px;
+  line-height: 76px;
+  font-weight: 800;
+}
+@keyframes appear {
+  to{
+    opacity: 1;
+    transform: translateY(0);
+
+
+  }
+  
+}
+.head-title span {
+  color: var(--primary-color);
+}
+header {
+  padding: 20px 0;
+  background-color: var(--silver-color);
+}
+.nav-links {
+  flex-direction: column;
+  gap: 10px;
+  display: none;
+  
+
+
+}
+.signup {
+  background-color: var(--primary-color);
+  color: var(--main-white);
+  border: none;
+  border-radius: 6px;
+  width: 91px;
+  height: 40px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.cust-button{
+  background-color: var(--primary-color);
+  color: var(--main-white);
+  border: none;
+  border-radius: 6px;
+  width: 128px;
+  height: 52px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.cust-button2{
+  background-color: var(--primary-color);
+  color: var(--main-white);
+  border: none;
+  border-radius: 4px;
+  width: 151px;
+  height: 52px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.sec2{
+  padding: 16px 0;
+  height: 190px;
+  font-size: 36px;
+}
+.sec3{
+  padding: 32px 0;
+  height: 416px;
+  font-size: 36px;
+}
+.sec3-ul{
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 127.5px;
+  
+  justify-content: space-between;
+
+
+}
+.sec2-title{
+  color: #4d4d4d;
+
+}
+.sec2-ul{
+  display: flex;
+  column-gap: 100px;
+  row-gap: 30px;
+  padding-top: 16px ;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  
+
+}
+.nav-bar{
+  display: none;
+  
+}
+.mob{
+  display: none;
+  background-color: #ffffff;
+  justify-content: start;
+  padding: 10px 20px;
+}
+.nav-bar ul li{
+  padding: 10px 20px;
+  border-bottom: 1px #4caf4f solid;
+  width: 100%;
+  background-color: #ffffff;
+
+}
+.mob .login{
+  border: 1px solid #4caf4f;
+  background: none;
+  font-size: 14px;
+  color: var(--primary-color);
+  line-height: 20px;
+  font-weight: 500;
+  height: 40px;
+  width: 91px;
+
+}
+
+
+.nav-bar:hover .nav-links{
+  display: block;
+
+}
+.nav-bar:hover .mob{
+  display: block;
+
+}
+
+
+@media(max-width: 1089px ){
+  .nav-bar {
+    display: block;
+
+  }
+
+}
+
+@media(max-width: 1089px ){
+  .links,
+  .log-button,
+  .head-image,
+  .image{
+    display: none;
+
+  }
+
+}
+.head-image{
+  animation: move 3s ease-in-out infinite;
+
+}
+
+@keyframes move {
+  0% { 
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(-20px);
+  }
+  100%{
+    transform: translateY(0);
+  }
+
+  
+}
+
+.links ul li a {
+  color: var(--text-grey);
+  font-size: 16px;
+}
+.shadow{
+  width: 50px;
+  height: 50px;
+  background-color: #E8F5E9;
+  position: absolute;
+  border-radius: 10px 5px 18px 5px;
+
+
+}
+.icons{
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  left: -15px;
+  top: -7px;
+
+}
+
+.icon-box{
+  position: relative;
+  width: 65px;
+  height: 56px;
+  margin: 0 auto;
+}
+.icons2{
+  width: 48px;
+  height: 48px;
+
+}
+.headline{
+  font-weight: 700;
+  color: #4d4d4d;
+  font-size: 28px;
+  line-height: 36px;
+  padding: 16px 0 8px 0;
+
+  
+}
+
+.head-description {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--sec-grey);
+  margin-top: 16px;
+  margin-bottom: 20px;
+}
+.head-description2 {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--sec-grey);
+  margin-bottom: 32px;
+}
+.stats{
+  
+  display: grid;
+  grid-template-rows: 60px 60px;
+  grid-template-columns: 255px 255px;
+}
+.stats li p{
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--sec-grey);
+}
+.stats li h1{
+  color: #4d4d4d;
+}
+.icon-desc{
+  width: 290px;
+  height: 290px;
+  padding:24px 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px #ABBED133;
+  text-align: center;
+
+}
+
+    </style>
+</head>
+<body>
+    <header style="display: flex;">
+        <div class="head">
+            <div class="logo">
+                <img src="C:\Users\marwa\Downloads\Logo.svg" alt="logo">
+            </div>
+            <div class="nav-bar">
+              <div style="position: absolute;z-index: 5;">
+              <i style="position: relative;" class="fa-solid fa-bars"></i>
+              <nav class="nav-links" >
+              <ul>
+                <li><a href=""></a>Home</li>
+                <li><a href=""></a>Service</li>
+                <li><a href=""></a>Feature</li>
+                <li><a href=""></a>Product</li>
+                <li><a href=""></a>Testimonial</li>
+                <li><a href=""></a>FAQ</li>
+              </ul>
+            </nav>
+             <div class="mob">
+              <button class="login">login</button>
+              <button class="signup">sign up</button>
+            </div>
+          </div>
+
+
+            </div>
+            <nav class="links" >
+              <ul>
+                <li><a href=""></a>Home</li>
+                <li><a href=""></a>Service</li>
+                <li><a href=""></a>Feature</li>
+                <li><a href=""></a>Product</li>
+                <li><a href=""></a>Testimonial</li>
+                <li><a href=""></a>FAQ</li>
+              </ul>
+            </nav>
+            <div class="log-button">
+              <button class="login">login</button>
+              <button class="signup">sign up</button>
+            </div>
+        </div>
+
+    </header>
+    <main>
+      <section class="sec1">
+        <div class="head">
+          <div class="head-content">
+            <div class="head-text">
+              <h1 class="head-title">Lesson and insights <span>from 8 years</span></h1>
+              <p class="head-description">Where to grow your buisness as a photo grapher: site or social media?</p>
+              <button class="cust-button">Register</button>
+
+
+              </div>
+              <div class="head-image">
+                <img src="file:///C:/Users/marwa/Downloads/Illustration.svg" alt="">
+              </div>
+
+
+
+
+            </div>
+
+
+          </div>
+
+        </div>
+      </section>
+      <section class="sec2" style="height: 190px;">
+        <div class="head2">
+          <div align="center">
+          <h1 class="sec2-title" >Our Clients</h1>
+          <p class="head-description">We have been working with some fortune 500+ client</p>
+          </div>
+          <ul class="sec2-ul">
+            <li><img src="file:///C:/Users/marwa/Downloads/Logo%20(1).svg" alt="logo"></li>
+            <li><img src="C:/Users/marwa/Downloads/Logo%20(2).svg" alt="logo"></li>
+            <li><img src="file:///C:/Users/marwa/Downloads/Logo%20(3).svg" alt="logo"></li>
+            <li><img src="C:\Users\marwa\Downloads\Logo (1).png" alt="logo"></li>
+            <li><img src="C:\Users\marwa\Downloads\Logo (2).png" alt="logo"></li>
+            <li><img src="C:\Users\marwa\Downloads\Logo (3).png" alt="logo"></li>
+            <li><img src="file:///C:/Users/marwa/Downloads/Logo%20(3).svg" alt="logo"></li>
+          </ul>
+        </div>
+      </section>
+      <section class="sec3">
+        <div class="head2">
+          <div align="center"  >
+            <h1 class="sec2-title">Manage your entire community <br> in a single system</h1>
+            <p class="head-description">Who is Nextcent suitable for?</p>
+          </div>
+          <div>
+          <ul class="sec3-ul">
+            <li class="icon-desc">
+               <div class="icon-box">
+                <div class="shadow"></div>
+                <img  class="icons" src="C:\Users\marwa\Downloads\Icon.svg" alt="">
+               </div>
+               <h1 class="headline">Membership Organisations</h1>
+               <p class="head-description">Our membership management software provides full automation of membership renewals and payments</p>
+            </li>
+            <li class="icon-desc">
+              <div class="icon-box">
+                <div class="shadow"></div>
+               <img class="icons" src="C:\Users\marwa\Downloads\Icon (1).svg" alt="">
+              </div>
+               <h1 class="headline">National Associations</h1>
+               <p class="head-description">Our membership management software provides full automation of membership renewals and payments</p>
+            </li>
+            <li class="icon-desc">
+              <div class="icon-box">
+                <div class="shadow"></div>
+             <img class="icons" src="C:\Users\marwa\Downloads\Icon (2).svg" alt="">
+              </div>
+               <h1 class="headline" >Clubs And <br> Groups</h1>
+               <p class="head-description">Our membership management software provides full automation of membership renewals and payments</p>
+            </li>
+          
+
+          </ul>
+          </div>
+        </div>
+          
+
+      </section>
+      <section class="sec4">
+        <div class="head">
+          <img class="image" style="margin-top: 50px;" src="file:///C:/Users/marwa/Downloads/Frame%2035.svg" alt="frame">
+
+          <div>
+            <h1 style="color: #4d4d4d; font-weight: 600; font-size: 36px;">The unseen of spending three years at Pixelgrade</h1>
+            <p class="head-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo ipsum. Sed accumsan quam vitae est varius fringilla. Pellentesque placerat vestibulum lorem sed porta. Nullam mattis tristique iaculis. Nullam pulvinar sit amet risus pretium auctor. Etiam quis massa pulvinar, aliquam quam vitae, tempus sem. Donec elementum pulvinar odio.</p>
+            <button class="cust-button2">learn more</button>
+          </div>
+        </div>
+        
+
+      </section>
+      <section class="sec5"  style="background-color: #f5f7fa;">
+        <div class="head" >
+          <div class="head-text">
+              <h1 class="head-title" style="font-size: 36px;">Helping a local <span> business reinvent itself</span></h1>
+              <p class="head-description2">We reached here with our hard work and dedication</p>
+          </div>
+          <div >
+            <ul class="stats">
+              <li style="display: flex;">
+                
+                <img class="icons2" src="file:///C:/Users/marwa/Downloads/Icon%20(3).svg" alt="">
+                <div style="flex-direction: column;">
+                <h1>2,245,341</h1>
+                <p >Members</p>
+                </div>
+              </li>
+              <li style="display: flex;">
+                <img class="icons2" src="file:///C:/Users/marwa/Downloads/Icon%20(2).svg" alt="">
+                <div style="flex-direction: column;">
+                <h1>46,328</h1>
+                <p>Clubs</p>
+                </div>
+              </li>
+              <li style="display: flex;">
+                
+                <img class="icons2" src="file:///C:/Users/marwa/Downloads/Icon%20(5).svg" alt="">
+                <div style="flex-direction: column;">
+                <h1>828,867</h1>
+                <p >Event Bookings</p>
+                </div>
+              </li>
+              <li style="display: flex;">
+                <img class="icons2" src="file:///C:/Users/marwa/Downloads/Icon%20(4).svg" alt="">
+                <div style="flex-direction: column;">
+                <h1>1,926,436</h1>
+                <p >Payments</p>
+                </div>
+              </li>
+
+            </ul>
+
+
+          </div>
+
+
+        </div>
+      </section>
+      <section class="sec6">
+        <div class="head">
+          <img style="margin-top: 30px;" src="C:\Users\marwa\AppData\Local\Temp\5c890437-4b2b-4f1d-9347-f771cafea332_Untitled (1).zip.Untitled (1).zip\mobile-login\pana.jpg" alt="">
+        
+         <div style="flex-direction: column;">
+          <h1 style="font-size: 36px;font-weight: 600; color: #4d4d4d;">How to design your site footer like we did</h1>
+          <p class="head-description">Donec a eros justo. Fusce egestas tristique ultrices. Nam tempor, augue nec tincidunt molestie, massa nunc varius arcu, at scelerisque elit erat a magna. Donec quis erat at libero ultrices mollis. In hac habitasse platea dictumst. Vivamus vehicula leo dui, at porta nisi facilisis finibus. In euismod augue vitae nisi ultricies, non aliquet urna tincidunt. Integer in nisi eget nulla commodo faucibus efficitur quis massa. Praesent felis est, finibus et nisi ac, hendrerit venenatis libero. Donec consectetur faucibus ipsum id gravida.</p>
+          <button class="cust-button2">Learn More</button>
+         </div>
+        </div>
+      </section>
+      <section class="sec7" style="background-color: #F5F7FA;">
+        <div class="head">
+          <img style="margin-top: 30px;" src="C:\Users\marwa\Downloads\image 9.png" alt="">
+
+
+          <div style="display: flex;flex-direction: column; gap: 16px; ">
+            <p style="color:#717171 ;">Maecenas dignissim justo eget nulla rutrum molestie. Maecenas lobortis sem dui, vel rutrum risus tincidunt ullamcorper. Proin eu enim metus. Vivamus sed libero ornare, tristique quam in, gravida enim. Nullam ut molestie arcu, at hendrerit elit. Morbi laoreet elit at ligula molestie, nec molestie mi blandit. Suspendisse cursus tellus sed augue ultrices, quis tristique nulla sodales. Suspendisse eget lorem eu turpis vestibulum pretium. Suspendisse potenti. Quisque malesuada enim sapien, vitae placerat ante feugiat eget. Quisque vulputate odio neque, eget efficitur libero condimentum id. Curabitur id nibh id sem dignissim finibus ac sit amet magna.</p>
+            <span style="font-size: 20px;font-weight: 600; color: #4caf4f;">Tim Smith</span>
+            <p style="color: #89939E;">British Dragon Boat Racing Association</p>
+            <div>
+              <ul style="display: flex; gap:32px ;">
+                <li class="icons2"><img src="file:///C:/Users/marwa/Downloads/Logo%20(4).svg" alt=""></li>
+                <li class="icons2"><img src="file:///C:/Users/marwa/Downloads/Logo%20(2).svg" alt=""></li>
+                <li class="icons2"><img src="file:///C:/Users/marwa/Downloads/Logo%20(3).svg" alt=""></li>                
+                <li class="icons2"><img src="file:///C:/Users/marwa/Downloads/Logo%20(5).svg" alt=""></li>
+                <li class="icons2"><img src="C:\Users\marwa\Downloads\Logo (3).png" alt=""></li>
+                <li class="icons2"><img src="C:\Users\marwa\Downloads\Logo (2).png" alt=""></li>
+                <li style="padding: 8px; display: flex; align-items: center; color: #4caf4f;">
+                  
+                  <h4 style="font-size: 20px; font-weight: 600;">Meet all customers</h4>
+                  <img src="C:\Users\marwa\AppData\Local\Temp\b55d98e3-1616-4dff-be26-e1e64b22d4e0_Untitled (2).zip.Untitled (2).zip\24\Arrows & Directions\Right.png" alt="">
+
+                </li>
+
+
+              </ul>
+            </div>
+
+          </div>
+         
+
+
+
+
+        </div>
+      </section>
+      <section class="sec8">
+        <div class="head"></div>
+
+
+
+
+      </section>
+
+
+
+
+    </main>
+
+
+</body>
+</html>
