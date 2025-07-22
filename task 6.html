@@ -146,15 +146,17 @@ header {
   height: 52px;
   font-size: 14px;
   cursor: pointer;
+
+
 }
 .sec2{
   padding: 16px 0;
-  height: 190px;
+  
   font-size: 36px;
 }
 .sec3{
   padding: 32px 0;
-  height: 416px;
+ 
   font-size: 36px;
 }
 .sec3-ul{
@@ -162,7 +164,7 @@ header {
   flex-wrap: wrap;
   column-gap: 127.5px;
   
-  justify-content: space-between;
+  justify-content: center;
 
 
 }
@@ -175,7 +177,7 @@ header {
   column-gap: 100px;
   row-gap: 30px;
   padding-top: 16px ;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   
 
@@ -297,7 +299,6 @@ header {
   line-height: 36px;
   padding: 16px 0 8px 0;
 
-  
 }
 
 .head-description {
@@ -314,7 +315,6 @@ header {
   margin-bottom: 32px;
 }
 .stats{
-  
   display: grid;
   grid-template-rows: 60px 60px;
   grid-template-columns: 255px 255px;
@@ -335,6 +335,120 @@ header {
   box-shadow: 0 2px 4px #ABBED133;
   text-align: center;
 
+}
+.card{
+    position: relative;
+    width: 368px ;
+    height: 462px ;
+    display: flex;
+    flex-wrap: wrap;
+}
+.card-content{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 8px;
+    width:317px ;
+    height: 176px ;
+    background-color: var(--silver-color);
+}
+.card-content p{
+    color:#717171 ;
+    font-size: 20px ;
+    line-height:28px ;
+    font-weight:600 ;
+    padding-top: 18px ;
+    text-align: center;
+
+}
+.card-content button{
+    width: 50%;
+    height: 40px;
+    padding-top: 16px;
+    background: none;
+    border: none;
+    color: #4caf4f;
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin: 0 auto;
+
+}
+.last{
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 76px;
+    justify-content: center;
+    text-align: center;
+    color: #263238;
+    margin-bottom: 32px;
+}
+.footer{
+  
+  max-width: 1200px ;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+ 
+  align-items: center;
+}
+
+
+.contact-button{
+    margin: auto 16px;
+    border-radius: 50%;
+    border-style: none;
+    background-color: #18191f;
+    height: 32px;
+    width: 32px;
+
+}
+
+.contact i{
+    color: #FFFFFF;
+    justify-content: center;
+}
+.company{
+    margin-right: 125px;
+    margin-top: 64px;
+    width: 160px;
+
+}
+.company h4{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+}
+.company ul{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+
+}
+.company li{
+    font-weight: 400;
+    font-size: 14px;
+    
+    color: #F5F7FA;
+}
+.company input{
+    background-color: var(--main-grey);
+    height: 40px;
+    
+    border-style: none;
+    border-radius: 8px;
+
+}
+.company i{
+    position: absolute;
+    color: #F5F7FA;
+    z-index: 4;
 }
 
     </style>
@@ -538,7 +652,7 @@ header {
       </section>
       <section class="sec7" style="background-color: #F5F7FA;">
         <div class="head">
-          <img style="margin-top: 30px;" src="C:\Users\marwa\Downloads\image 9.png" alt="">
+          <img class="image" style="margin-top: 30px;" src="C:\Users\marwa\Downloads\image 9.png" alt="">
 
 
           <div style="display: flex;flex-direction: column; gap: 16px; ">
@@ -573,12 +687,145 @@ header {
         </div>
       </section>
       <section class="sec8">
-        <div class="head"></div>
+        <div class="head2">
+            <div align="center" >
+             <div class="headline">Caring is the new marketing</div>
+             <p class="head-description">The Nexcent blog is the best place to read about the latest membership insights, <br> trends and more. See who's joining the community, read about how our community <br> are increasing their membership income and lot's more.​</p>
+            </div>
+          <div style="display: flex; gap: 24px; flex-wrap: wrap; align-items: center; justify-content: center;">
+            <div class="card">
+                <img src="file:///C:/Users/marwa/Downloads/image%2018.svg" alt="">
+                <div class="card-content">
+                    <p>Creating Streamlined Safeguarding Processes with OneRen</p>
+
+
+                    <button>
+                        <span>Readmore</span><i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+                </div>
+                <div class="card">
+                <img src="file:///C:/Users/marwa/Downloads/image%2019.svg" alt="">
+                <div class="card-content">
+                    <p>What are your safeguarding responsibilities and how can you manage them?</p>
+
+
+                    <button>
+                        <span>Readmore</span><i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+                </div>
+                <div class="card">
+                <img src="file:///C:/Users/marwa/Downloads/image%2020.svg" alt="">
+                <div class="card-content">
+                    <p>Revamping the Membership Model with Triathlon Australia</p>
+
+
+                    <button>
+                        <span>Readmore</span><i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+                </div>
+
+          </div>
+        </div>
 
 
 
-
+        </div>
       </section>
+      <section style="color: #717171;">
+        <div class="head2">
+           
+            <div class="last">Pellentesque suscipit <br> fringilla libero eu.</div>
+            <div align="center">
+              <button class="cust-button">Get a Demo <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </div>
+      </section>
+      <footer style="background-color: #263238;">
+       <div class="footer">
+        <div style="flex-direction: column; gap: 40px; margin-top:64px ;">
+            <img src="file:///C:/Users/marwa/AppData/Local/Temp/44b6c3f8-6c02-43fb-822a-99b78837faf8_Untitled%20(3).zip.Untitled%20(3).zip/Footer/Big/Logo.svg" alt="logo">
+            <div>
+                <br>
+                <br>
+                <p style="color: var(--silver-color);">Copyright © 2020 Nexcent ltd.</p>
+                <br>
+                <p style="color: var(--silver-color);">All rights reserved</p>
+            </div>
+            <ul style="display: flex; margin-top: 40px;">
+                <li class="contact">
+                    <button class="contact-button">
+                    <i class="fa-brands fa-instagram"></i>
+                    </button>
+                </li>
+                <li class="contact">
+                    <button class="contact-button">
+                    <i class="fa-solid fa-basketball"></i>
+                    </button>
+                </li>
+                <li class="contact">
+                    <button class="contact-button">
+                    <i class="fa-brands fa-twitter"></i>
+                    </button>
+                </li>
+                <li class="contact">
+                    <button class="contact-button">
+                    <i class="fa-brands fa-youtube"></i>
+                    </button>
+                </li>
+
+            </ul>
+
+        </div>
+
+        <div style="display: flex; flex-wrap: wrap; ">
+            <div class="company">
+                <h4 style="margin-bottom: 24px; color: #FFFFFF;">Company</h4>
+                <ul>
+                    <li><p>About us</p></li>
+
+                    <li><p> Blog</p></li>
+
+                    <li><p>Contact us</p></li>
+
+                    <li><p>Pricing</p></li>
+
+                    <li><p>Testimonials</p></li>
+
+                </ul>
+            </div>
+
+            <div class="company">
+                <h4 style="margin-bottom: 24px; color: #FFFFFF;">Support</h4>
+                <ul>
+                    <li><p>Help center</p></li>
+
+                    <li><p> Terms of service</p></li>
+
+                    <li><p>Legal</p></li>
+
+                    <li><p>Privacy policy</p></li>
+
+                    <li><p>Status</p></li>
+
+                </ul>
+            </div>
+            <div class="company">
+                <h4 style="margin-bottom: 24px; color: #FFFFFF;">Stay up to date</h4>
+                <br>
+                <div>
+                 <input type="text" placeholder="Your email address">
+                
+
+                </div>
+            </div>
+        </div>
+          
+
+
+      </footer>
 
 
 
