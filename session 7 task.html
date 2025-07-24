@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Session 2 part 2 task</title>
+    <style>
+        body{
+            background-color: blue;
+            margin: 0 20px;
+
+
+
+        }
+        * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+        .form{ 
+           max-width: 800px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+            margin: 20px auto 0 auto;
+            background-color: aliceblue;
+            border-radius: 20px;
+        }
+        .head{
+            margin-top: 30px;
+            color: blue;
+            font-size: 45px;
+            font-weight: 600;
+            line-height: 40px;
+
+        }
+        .head2{
+            color: blue;
+          
+            font-weight: 200;
+            line-height: 40px;
+
+        }
+        .desc{
+            color: #7e7d7d;
+
+
+        }
+        .box{
+            margin:20px 20px ;
+            padding:20px 40px ;
+            background-color: white;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            flex-wrap: wrap;
+                }
+
+        .box2{
+             margin:20px 20px ;
+            padding:20px 40px ;
+            background-color: white;
+            border-radius: 20px;
+            display: flex;
+        
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+        .inputs{
+            height: 40px;
+            border-radius: 8px;
+
+        }
+        .cup{
+            height: 40px;
+            width: 100px;
+            padding: 0 10px;
+            border:1px solid black ;
+            display: flex;
+            gap: 5px;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: start;
+            border-radius: 8px;
+            background-color:rgb(255, 255, 255) ;
+
+        }
+        .cup2{
+             height: 40px;
+             padding: 0 20px;
+            border:1px solid black ;
+            display: flex;
+            gap: 5px;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: start;
+            border-radius: 8px;
+            background-color:rgb(255, 255, 255) ;
+
+        
+        }
+        @media(max-width :800px){
+            .cup,
+            .cup2{
+                width: 100%;
+
+
+            }
+            .norm{
+                display: flex;
+                flex-direction: column;
+
+            }
+
+        }
+        .file{
+            height: 40px;
+            width: 100%;
+            border-style: dashed;
+            border-radius: 8px;
+            justify-content: center;
+
+
+
+
+        }
+        .submit{
+            width: 95%;
+            margin: 20px;
+            padding: 20px;
+            background-color: blue;
+            border: none;
+            border-radius: 8px ;
+            color: white;
+            justify-content: center;
+   
+
+
+        }
+
+
+
+    </style>
+    
+</head>
+<body>
+<form class="form" action="">
+    <section class="sec1">
+        <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+        <h1 class="head">Professional Registration Form</h1>
+        <br>
+
+        <p class="desc">Join our community of professionals and unlock exclusive opportunities</p>
+        </div>
+    <div class="box">
+        <h1 class="head2">Personal Information</h1>
+        <div style="display: flex; gap: 40px; flex-wrap: wrap;">
+            
+        <div>
+            
+         <label for="Full Name">Full Name:</label>
+         <br>
+         <input class="inputs" type="text" placeholder="Enter your full name" required>
+         <br>
+        </div>
+        <div>
+         <label for="Email">Email:</label>
+         <br>
+         <input class="inputs" type="email" placeholder="email" required>
+         </div>
+    </div>
+    <div>
+   <label for="Phone Number">Phone Number</label>
+     <br>
+   <input class="inputs"  type="tel" placeholder="Phone Number" required>
+     <br>
+    </div>
+    </div>
+    </section>
+
+<section class="sec2 ">
+    <div class="box">
+        <h1 class="head2">Security Information</h1>
+        <div style="display: flex; gap: 40px; flex-wrap: wrap; width: 100%;">
+        <div>
+<label for="Password">Password*</label>
+<br>
+<br>
+<input class="inputs" style="width: 100%;" type="password" placeholder="Create a strong password" required>
+<br>
+       </div>
+       <div>
+<label for="Confirm Password">Confirm Password*</label>
+<br><br>
+<input class="inputs" style="width: 100%;" type="password" placeholder="Re-enter your Password" required>
+<br>
+       </div>
+    </div>
+    </div>
+</section>
+
+<section class="sec3">
+   <div class="box">
+    <h1 class="head2">Demographics & Preferences</h1>
+    <div>
+      <label for="Gender">Gender</label>
+    </div>
+    <div style="display:flex ; gap: 20px; flex-wrap: wrap;">
+ <div class="cup">
+<input type="radio" id="Male" name="Gender" value="male">
+<label for="Male">Male</label>
+<br>
+</div>
+<div class="cup">
+<input type="radio" id="Female" name="Gender" value="female">
+<label for="Female">Female</label>
+<br>
+</div>
+</div>
+<div>
+<label  for="Nationalty">Nationalty:</label>
+<br>
+<br>
+<select class="inputs" style="width: 100%;" name="Nationalty" id="Nationalty">
+<option value="Select your nationality" >Select your nationality</option>   
+<option value="USA">American</option>
+<option value="egypt">Egyptian</option>
+<option value="KSA">Saudian</option>
+<option value="india">indian</option>
+<option value="italy">italian</option>
+
+</select>
+</div>
+<br>
+<div class="norm">
+<label for="Areas of interest">Areas of interest</label>
+<br>
+<div style="display: flex; flex-wrap: wrap; gap: 20px;">
+<div class="cup2">
+<input type="checkbox" id="subject1" value="Programming & Development">
+<label for="Programming & Development"> Programming & Development</label>
+<br>
+</div>
+<div class="cup2">
+<input type="checkbox" id="subject2" value="AI">
+<label for="AI"> Artificial Intelligence</label>
+<br>
+</div>
+<div class="cup2">
+<input type="checkbox" id="subject3" value="UX">
+<label for="UX"> User Experience Design</label>
+<br>
+</div>
+<div class="cup2">
+<input type="checkbox" id="subject4" value="Security">
+<label for="CS"> Cyber security</label>
+<br>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="sec4">
+    <h1 class="head2">Additional Information</h1>
+    <div class="box">
+    <div>
+<label for="CV">Resume/CV (PDF, DOC)</label>
+<br>
+<br>
+<input class="file" type="file" id="file" placeholder="choose a file or drag and drop">
+    </div>
+<div>
+<label for="about yourself">About yourself</label>
+<br>
+<textarea rows="4" cols="30" style="width: 100%;">
+    Tell us about your background,experience,and what motivates you...
+</textarea>
+</div>
+<div>
+<label for="date">Preferred Start Date</label>
+<br>
+<br>
+<input type="date" class="cup2" style="width: 100%;">
+
+</div>
+</div>
+</section>
+<br>
+<br>
+<button class="submit">submit</button>
+
+</form>
+    
+
+</body>
+
+
+</html>
